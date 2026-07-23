@@ -1,17 +1,605 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Maria Akinbode | Portfolio</title>
-  <style>
-    body { font-family: Arial; text-align: center; padding: 50px; background: #f4f4f4; }
-    img { border-radius: 50%; border: 5px solid #333; width: 250px; }
-    h1 { color: #333; }
-  </style>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Maria Akinbode | Virtual Assistant Portfolio</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#F8FAFC,#ECFDF5);
+color:#1F2937;
+line-height:1.7;
+overflow-x:hidden;
+}
+
+header{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+padding:20px 8%;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+background:rgba(255,255,255,.95);
+
+backdrop-filter:blur(12px);
+
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+z-index:1000;
+
+}
+
+.logo{
+font-size:30px;
+font-weight:700;
+color:#1E3A8A;
+}
+
+.logo span{
+color:#10B981;
+}
+
+nav{
+display:flex;
+gap:30px;
+}
+
+nav a{
+text-decoration:none;
+color:#374151;
+font-weight:600;
+transition:.3s;
+}
+
+nav a:hover{
+color:#10B981;
+}
+
+.hero{
+padding:170px 8% 100px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:60px;
+flex-wrap:wrap;
+}
+
+.hero-text{
+flex:1;
+min-width:320px;
+}
+
+.greeting{
+font-size:28px;
+color:#10B981;
+font-weight:700;
+}
+
+.hero-text h1{
+font-size:70px;
+line-height:1.1;
+color:#1E3A8A;
+margin:15px 0;
+}
+
+.hero-text h3{
+font-size:28px;
+color:#374151;
+margin-bottom:25px;
+}
+
+.hero-text p{
+font-size:18px;
+margin-bottom:35px;
+color:#555;
+max-width:620px;
+}
+
+.hero-buttons{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.btn{
+
+display:inline-block;
+
+padding:16px 38px;
+
+border-radius:50px;
+
+text-decoration:none;
+
+font-weight:600;
+
+background:#10B981;
+
+color:white;
+
+transition:.35s;
+
+box-shadow:0 12px 25px rgba(16,185,129,.30);
+
+}
+.btn:hover{
+
+transform:translateY(-5px);
+
+box-shadow:0 18px 40px rgba(16,185,129,.40);
+
+}
+
+.btn-secondary{
+background:#1E3A8A;
+}
+
+.hero-image{
+flex:1;
+display:flex;
+justify-content:center;
+min-width:320px;
+}
+
+.hero-image img{
+width:380px;
+height:380px;
+border-radius:50%;
+object-fit:cover;
+border:8px solid #10B981;
+box-shadow:0 20px 45px rgba(0,0,0,.15);
+}
+
+section{
+padding:100px 8%;
+opacity:0;
+transform:translateY(60px);
+transition:all .8s ease;
+}
+
+section.show{
+opacity:1;
+transform:translateY(0);
+}
+
+font-size:48px;
+
+font-weight:800;
+
+text-align:center;
+
+margin-bottom:70px;
+
+color:#1E3A8A;
+
+position:relative;
+
+}
+.section-title::after{
+
+content:"";
+
+width:90px;
+
+height:5px;
+
+background:#10B981;
+
+display:block;
+
+margin:15px auto 0;
+
+border-radius:20px;
+
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+.card{
+background:white;
+padding:35px;
+border-radius:22px;
+box-shadow:0 15px 40px rgba(16,185,129,.08);
+transition:.4s ease;
+border:1px solid rgba(16,185,129,.08);
+}
+
+.card:hover{
+transform:translateY(-12px);
+box-shadow:0 25px 60px rgba(16,185,129,.20);
+}
+
+</style>
+
 </head>
+
 <body>
-  <img src="profile.jpg" alt="Maria Akinbode">
-  <h1>Maria Akinbode</h1>
-  <p>Welcome to my portfolio website!</p>
+
+<header>
+
+<div class="logo">
+Maria<span>.</span>
+</div>
+
+<nav>
+
+<a href="#about">About</a>
+
+<a href="#services">Services</a>
+
+<a href="#skills">Skills</a>
+
+<a href="#experience">Experience</a>
+
+<a href="#projects">Projects</a>
+
+<a href="#contact">Contact</a>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-text">
+
+<p class="greeting">
+Hello, I'm
+</p>
+
+<h1>
+Maria Akinbode
+</h1>
+
+<h3>
+Virtual Assistant | Administrative Support | Customer Support
+</h3>
+
+<p>
+I help busy entrepreneurs and businesses stay organized through reliable administrative support, email management, calendar management, customer support, data entry, and internet research.
+</p>
+
+<div class="hero-buttons">
+
+<a href="#contact" class="btn">
+Let's Work Together
+</a>
+
+<a href="Maria-Akinbode-CV.pdf.pdf" class="btn btn-secondary" download>
+Download Resume
+</a>
+
+</div>
+
+</div>
+
+<div class="hero-image">
+
+<img src="profile.jpg" alt="Maria Akinbode">
+
+</div>
+
+</section>
+<section id="stats">
+
+<h2 class="section-title">Why Choose Me?</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>🎯 Detail-Oriented</h3>
+<p>I pay close attention to details to ensure every task is completed accurately and professionally.</p>
+</div>
+
+<div class="card">
+<h3>⚡ Fast Learner</h3>
+<p>I quickly adapt to new tools, systems, and workflows, making it easy to support different businesses.</p>
+</div>
+
+<div class="card">
+<h3>🤝 Reliable Support</h3>
+<p>I communicate clearly, meet deadlines, and provide dependable support that clients can count on.</p>
+</div>
+
+<div class="card">
+<h3>📈 Productivity Focused</h3>
+<p>My goal is to save clients time, reduce stress, and help their businesses run more efficiently.</p>
+</div>
+
+</div>
+
+</section>
+<section id="about">
+
+<h2 class="section-title">About Me</h2>
+
+<div class="card">
+
+<h3>Who I Am</h3>
+
+<p>
+I am Maria Akinbode, a detail-oriented Virtual Assistant based in Nigeria with a background in Animal Production. I enjoy helping entrepreneurs and businesses stay organized through reliable administrative support.
+</p>
+
+<br>
+
+<p>
+My strengths include email management, calendar management, customer support, data entry, internet research, and document organization. I am committed to professionalism, accuracy, and excellent communication in every task I handle.
+</p>
+
+<br>
+
+<p>
+I believe that every business deserves dependable support, allowing business owners to focus on growth while I take care of the day-to-day administrative responsibilities.
+</p>
+
+</div>
+
+</section>
+
+
+<section id="services">
+
+<h2 class="section-title">How I Can Support Your Business</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>📧 Email Management</h3>
+<p>Organize inboxes, prioritize emails, respond professionally, and keep communication running smoothly.</p>
+</div>
+
+<div class="card">
+<h3>📅 Calendar Management</h3>
+<p>Schedule appointments, coordinate meetings, manage reminders, and organize your daily activities.</p>
+</div>
+
+<div class="card">
+<h3>📁 Administrative Support</h3>
+<p>Handle documents, file organization, travel research, and everyday administrative tasks efficiently.</p>
+</div>
+
+<div class="card">
+<h3>💬 Customer Support</h3>
+<p>Provide professional customer support through email and chat while ensuring excellent client satisfaction.</p>
+</div>
+
+<div class="card">
+<h3>📊 Data Entry</h3>
+<p>Maintain accurate spreadsheets, databases, and business records with close attention to detail.</p>
+</div>
+
+<div class="card">
+<h3>🌐 Internet Research</h3>
+<p>Conduct detailed online research, gather reliable information, and prepare organized reports for business decisions.</p>
+</div>
+
+</div>
+
+</section>
+<section id="skills">
+
+<h2 class="section-title">Skills & Tools</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Administrative Support</h3>
+<p>Managing schedules, business operations, documents, and daily administrative tasks efficiently.</p>
+</div>
+
+<div class="card">
+<h3>Email Management</h3>
+<p>Inbox organization, email prioritization, follow-ups, and professional communication.</p>
+</div>
+
+<div class="card">
+<h3>Calendar Management</h3>
+<p>Scheduling appointments, coordinating meetings, and managing reminders.</p>
+</div>
+
+<div class="card">
+<h3>Customer Support</h3>
+<p>Providing professional customer support through email and chat while maintaining excellent client relationships.</p>
+</div>
+
+<div class="card">
+<h3>Data Entry</h3>
+<p>Accurate record keeping, spreadsheet management, and database updates.</p>
+</div>
+
+<div class="card">
+<h3>Internet Research</h3>
+<p>Conducting online research, gathering reliable information, and preparing reports.</p>
+</div>
+
+<div class="card">
+<h3>Google Workspace</h3>
+<p>Google Docs, Sheets, Drive, Gmail, Calendar, and Forms.</p>
+</div>
+
+<div class="card">
+<h3>Microsoft Office</h3>
+<p>Microsoft Word, Excel, PowerPoint, and Outlook.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section id="experience">
+
+<h2 class="section-title">Experience</h2>
+
+<div class="card">
+
+<h3>D-Global Virtual Assistant Intern</h3>
+
+<p><strong>Virtual Assistant Intern</strong></p>
+
+<p>
+Supported administrative tasks, managed emails, organized schedules, performed internet research, maintained accurate records, and assisted with customer communication while developing strong remote work and organizational skills.
+</p>
+
+</div>
+
+</section>
+
+
+<section id="education">
+
+<h2 class="section-title">Education</h2>
+
+<div class="card">
+
+<h3>Bachelor of Agriculture (Animal Production)</h3>
+
+<p>
+Olabisi Onabanjo University, Nigeria
+</p>
+
+<p>
+Developed strong analytical, research, communication, and problem-solving skills that now support my work as a Virtual Assistant.
+</p>
+
+</div>
+
+</section>
+<section id="projects">
+
+    <h2 class="section-title">Featured Projects</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>📧 Email & Calendar Management</h3>
+            <p>
+                Organized client inboxes, managed appointments, and coordinated meetings to improve productivity and ensure timely communication.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🌐 Internet Research</h3>
+            <p>
+                Conducted detailed online research, compiled accurate information, and prepared organized reports to support business decisions.
+            </p>
+        </div>
+<div class="card">
+    <h3>📁 File & Document Organization</h3>
+    <p>
+        Organized digital files, documents, and folders using clear naming systems to improve accessibility and efficiency.
+    </p>
+</div>
+
+<div class="card">
+    <h3>💬 Customer Support & Data Entry</h3>
+    <p>
+        Provided professional customer support and handled accurate data entry while maintaining attention to detail and clear communication.
+    </p>
+</div>
+        <div class="card">
+            <h3>📊 Administrative Support</h3>
+            <p>
+                Managed documents, performed data entry, maintained records, and supported day-to-day business operations efficiently.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section id="contact">
+
+    <h2 class="section-title">Let's Work Together</h2>
+
+    <div class="card">
+
+        <h3>Contact Information</h3>
+
+        <p><strong>Email:</strong> maryadedoyin902@gmail.com</p>
+
+        <p><strong>Location:</strong> Nigeria</p>
+
+    <strong>LinkedIn:</strong><br>
+    <a href="https://www.linkedin.com/in/maria-akinbode-92011b22b" target="_blank">
+        View my LinkedIn Profile
+    </a>
+
+        </p>
+
+        <br>
+
+        <a href="mailto:maryadedoyin902@gmail.com" class="btn">
+            Send Me an Email
+        </a>
+
+    </div>
+
+</section>
+
+
+<footer style="background:#1E3A8A;color:white;text-align:center;padding:30px;">
+
+<p>
+© 2026 Maria Akinbode. All Rights Reserved.
+</p>
+
+<p style="margin-top:10px;font-size:14px;">
+Virtual Assistant | Administrative Support | Customer Support
+</p>
+
+</footer>
+<script>
+
+const observer = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+        if(entry.isIntersecting){
+            entry.target.classList.add("show");
+        }
+    });
+});
+
+document.querySelectorAll("section").forEach((section)=>{
+    observer.observe(section);
+});
+
+</script>
 </body>
+
 </html>
